@@ -33,10 +33,11 @@ try:
         th_json_data = json.loads(thResponse.text)
         #print json response
         print "READ:"
+        print "Attribute      | Value"
         print "___________________________"
-        print "Distance: "+str(w_json_data['distance'])
-        print "Temperature: " + str(th_json_data['temperature'])
-        print "Humidity: " + str(th_json_data['humidity'])
+        print "Distance:      |"+str(w_json_data['distance'])
+        print "Temperature:   |"+str(th_json_data['temperature'])
+        print "Humidity:      |"+str(th_json_data['humidity'])
         print "___________________________"
         print "\n"
 
