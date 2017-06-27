@@ -31,11 +31,12 @@ try:
         #Format respnse to json
         w_json_data = json.loads(wResponse.text)
         th_json_data = json.loads(thResponse.text)
+        wString = str(w_json_data['distance'])
         #print json response
         print "Server Responses:"
         print "Attribute      | Value"
         print "___________________________"
-        print "Distance:      |"+str(w_json_data['distance'])
+        print "Distance:      |"+wString
         print "___________________________"
         print "Temperature:   |"+str(th_json_data['temperature'])
         print "Humidity:      |"+str(th_json_data['humidity'])
@@ -73,7 +74,6 @@ try:
             GPIO.output(WRed, GPIO.HIGH)  # led on
             GPIO.output(WGreen, GPIO.LOW)  # led off
             GPIO.output(WYellow, GPIO.LOW)
-
         time.sleep(5)
 
 except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed
