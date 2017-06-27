@@ -84,5 +84,6 @@ def tempHum():
 	GPIO.cleanup()
 
 while True:
+	GPIO.cleanup()
 	tempHum()
 	time.sleep(3)

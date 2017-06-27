@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ebb11dc-fa55-43cb-8673-0ec59d8989f2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/temp_hum_logic_def.py" afterPath="$PROJECT_DIR$/getTH.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LED_logic.py" afterPath="$PROJECT_DIR$/LED_logic.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getTH.py" afterPath="$PROJECT_DIR$/getTH.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,7 +54,7 @@
       <file leaf-file-name="LED_logic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LED_logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="221">
               <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -68,8 +66,8 @@
       <file leaf-file-name="getTH.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getTH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -93,6 +91,7 @@
         <option value="$PROJECT_DIR$/temp_hum_led.py" />
         <option value="$PROJECT_DIR$/distance_measure.py" />
         <option value="$PROJECT_DIR$/LED_logic.py" />
+        <option value="$PROJECT_DIR$/getTH.py" />
       </list>
     </option>
   </component>
@@ -406,16 +405,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/weight_led.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="44" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="45" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/distance_measure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -434,9 +423,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/weight_led.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="44" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="45" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LED_logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="221">
           <caret line="32" column="50" lean-forward="true" selection-start-line="32" selection-start-column="50" selection-end-line="32" selection-end-column="50" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -446,8 +445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getTH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="36" column="47" lean-forward="true" selection-start-line="36" selection-start-column="47" selection-end-line="36" selection-end-column="47" />
           <folding />
         </state>
       </provider>
