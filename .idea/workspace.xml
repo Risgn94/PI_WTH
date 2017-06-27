@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ebb11dc-fa55-43cb-8673-0ec59d8989f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getTH.py" afterPath="$PROJECT_DIR$/getTH.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/threading.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +34,8 @@
       <file leaf-file-name="temp_hum_led.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/temp_hum_led.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="54" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="43" selection-end-column="54" />
+            <state relative-caret-position="255">
+              <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -45,8 +46,8 @@
       <file leaf-file-name="LED_logic.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LED_logic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            <state relative-caret-position="270">
+              <caret line="20" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="29" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -54,11 +55,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getTH.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="threading.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/threading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="145" column="12" lean-forward="false" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#352#1811#0" expanded="false" />
+                <element signature="e#1835#3875#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getTH.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getTH.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -81,8 +96,9 @@
       <list>
         <option value="$PROJECT_DIR$/temp_hum_led.py" />
         <option value="$PROJECT_DIR$/distance_measure.py" />
-        <option value="$PROJECT_DIR$/LED_logic.py" />
         <option value="$PROJECT_DIR$/getTH.py" />
+        <option value="$PROJECT_DIR$/LED_logic.py" />
+        <option value="$PROJECT_DIR$/threading.py" />
       </list>
     </option>
   </component>
@@ -393,7 +409,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -417,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temp_hum_led.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="54" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="43" selection-end-column="54" />
+        <state relative-caret-position="255">
+          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -427,8 +445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LED_logic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        <state relative-caret-position="270">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="29" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -437,9 +455,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/getTH.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="89" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="145" column="12" lean-forward="false" selection-start-line="145" selection-start-column="12" selection-end-line="145" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#352#1811#0" expanded="false" />
+            <element signature="e#1835#3875#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
