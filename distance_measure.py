@@ -22,6 +22,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(16,GPIO.OUT,initial=GPIO.LOW)
 GPIO.setup(18,GPIO.IN)
 time.sleep(2)
+channels_used = [16,18]
 try:
         while True:
                 distanceVar = "%0.3f" %checkdist()
@@ -34,4 +35,5 @@ try:
                 json_data = json.loads(r.text)
                 print json_data['message']
 except KeyboardInterrupt:
-        GPIO.cleanup()
+        for channel in channels_used:
+                GPIO.cleanup(channel)
