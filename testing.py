@@ -5,10 +5,9 @@ import requests
 import datetime
 import json
 
-tLock = threading.BoundedSemaphore(value=4)
 def timer(name, delay, repeat):
     print  "\r\nTimer: ", name, " Started"
-    tLock.acquire()
+
     print "\r\n", name, " has the acquired the lock"
     while repeat > 0:
         time.sleep(delay)
@@ -16,7 +15,7 @@ def timer(name, delay, repeat):
         repeat -= 1
 
     print "\r\n", name, " is releaseing the lock"
-    tLock.release()
+
     print "\r\nTimer: ", name, " Completed"
 
 def tempHum(channel, j, data):
