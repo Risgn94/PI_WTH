@@ -78,7 +78,8 @@ def tempHum(channel, j, data):
 		print "temperature : ", temperature, ", humidity : " , humidity, " check : ", check, " tmp : ", tmp
 
 def proxyDef(channel, j, data):
-    tempHum(channel, j, data)
+    while True:
+        tempHum(channel, j, data)
 
 def Main():
     channel = 18
