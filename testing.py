@@ -77,6 +77,9 @@ def tempHum(channel, j, data):
 		print "wrong"
 		print "temperature : ", temperature, ", humidity : " , humidity, " check : ", check, " tmp : ", tmp
 
+def proxyDef(channel, j, data):
+    tempHum(channel, j, data)
+
 def Main():
     channel = 18
     data = []
@@ -95,13 +98,10 @@ def Main():
     GPIO.setup(channel, GPIO.IN)
 
     t1 = threading.Thread(target=timer, args=("Timer1", 2, 5))
-    t2 = threading.Thread(target=tempHum, args=(channel, j, data))
-    t3 = threading.Thread(target=timer, args=("Timer3", 4, 5))
+    t2 = threading.Thread(target=proxyDef, args=(channel, j, data))
 
-    while True:
-        t1.start()
+    t1.start()
     t2.start()
-    t3.start()
 
     print "\r\nMain Complete"
 
