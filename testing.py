@@ -106,4 +106,8 @@ def Main():
     print "\r\nMain Complete"
 
 if __name__ == "__main__":
-    Main()
+    try:
+        Main()
+    except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed
+        print 'Closing...'
+        GPIO.cleanup()
