@@ -89,4 +89,4 @@ try:
 		time.sleep(3)
 except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed
 	print 'Closing...'
-	GPIO.cleanup()
+	GPIO.cleanup(18)

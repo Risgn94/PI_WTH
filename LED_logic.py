@@ -10,6 +10,8 @@ WGreen = 13
 WRed = 19
 WYellow = 26
 
+channels_used = [21, 20, 16, 13, 19, 26]
+
 GPIO.setmode(GPIO.BCM) #set pinout hanling based on GPIO NR
 GPIO.setup([TransistorPin, TempGreen, TempRed, WGreen, WRed, WYellow], GPIO.OUT)
 
@@ -69,4 +71,5 @@ try:
 
 except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed
     print 'Closing...'
-    GPIO.cleanup()
+    for channel in channels_used:
+        GPIO.cleanup(channel)
