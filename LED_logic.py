@@ -62,15 +62,22 @@ try:
         min = optimum * 0.95
         currentMeasure = float(w_json_data['distance']) * 1000
 
+        print currentMeasure
+        print max
+        print min
+
         if currentMeasure > min and currentMeasure < max:
+            print"Green"
             GPIO.output(WGreen, GPIO.HIGH)
             GPIO.output(WRed, GPIO.LOW)  # led on
             GPIO.output(WYellow, GPIO.LOW)  # led off
         elif currentMeasure < max:
+            print"Yellow"
             GPIO.output(WRed, GPIO.LOW)  # led on
-            GPIO.output(WGreen, GPIO.HIGH)  # led off
+            GPIO.output(WYellow, GPIO.HIGH)  # led off
             GPIO.output(WGreen, GPIO.LOW)
         else:
+            print"RED"
             GPIO.output(WRed, GPIO.HIGH)  # led on
             GPIO.output(WGreen, GPIO.LOW)  # led off
             GPIO.output(WYellow, GPIO.LOW)
