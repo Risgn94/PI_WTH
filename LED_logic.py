@@ -71,10 +71,10 @@ try:
             GPIO.output(WGreen, GPIO.HIGH)
             GPIO.output(WRed, GPIO.LOW)  # led on
             GPIO.output(WYellow, GPIO.LOW)  # led off
-        elif currentMeasure < max:
+        elif currentMeasure > max:
             print"Yellow"
-            GPIO.output(WRed, GPIO.LOW)  # led on
-            GPIO.output(WYellow, GPIO.HIGH)  # led off
+            GPIO.output(WRed, GPIO.LOW)
+            GPIO.output(WYellow, GPIO.HIGH)
             GPIO.output(WGreen, GPIO.LOW)
         else:
             print"RED"
