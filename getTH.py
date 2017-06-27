@@ -75,7 +75,7 @@ def tempHum():
 		st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 		r = requests.post('http://46.101.118.225:7331/TH/THData', data = {'id': 5, 'humidity': humidity, 'temperature': temperature, 'timestamp': st})
 		json_data = json.loads(r.text)
-		#print json_data['message']
+		print json_data['message']
 	else:
 		print "wrong"
 		print "temperature : ", temperature, ", humidity : " , humidity, " check : ", check, " tmp : ", tmp
