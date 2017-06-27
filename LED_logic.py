@@ -32,10 +32,11 @@ try:
         w_json_data = json.loads(wResponse.text)
         th_json_data = json.loads(thResponse.text)
         #print json response
-        print "READ:"
+        print "Server Responses:"
         print "Attribute      | Value"
         print "___________________________"
         print "Distance:      |"+str(w_json_data['distance'])
+        print "___________________________"
         print "Temperature:   |"+str(th_json_data['temperature'])
         print "Humidity:      |"+str(th_json_data['humidity'])
         print "___________________________"

@@ -86,7 +86,6 @@ def tempHum():
 try:
 	while True:
 		tempHum()
-		time.sleep(3)
 except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed
 	print 'Closing...'
 	GPIO.cleanup(18)
