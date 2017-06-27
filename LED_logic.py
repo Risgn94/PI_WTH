@@ -3,9 +3,9 @@ import time
 import requests
 import json
 
-TransistortPin = 16    # pin for transistor control
+TransistortPin = 21    # pin for transistor control
 TempGreen = 20         # pin for green temp LED
-TempRed = 21           # pin for red temp LED
+TempRed = 16           # pin for red temp LED
 WGreen = 13
 WRed = 19
 WYellow = 26
@@ -32,8 +32,8 @@ try:
         w_json_data = json.loads(wResponse.text)
         th_json_data = json.loads(thResponse.text)
         #print json response
-        print "weight response: "+w_json_data
-        print "temp / hum response: " + th_json_data
+        print "weight response: "+str(w_json_data)
+        print "temp / hum response: " + str(th_json_data)
 
         #Handle LEDS for temp
         if th_json_data['temperature'] > 22:

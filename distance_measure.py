@@ -24,7 +24,7 @@ GPIO.setup(18,GPIO.IN)
 time.sleep(2)
 try:
         while True:
-		distanceVar = "%0.3f" %checkdist()
+                distanceVar = "%0.3f" %checkdist()
                 print distanceVar
                 time.sleep(0.5)
                 ts = time.time()
