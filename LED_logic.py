@@ -3,7 +3,7 @@ import time
 import requests
 import json
 
-TransistortPin = 21    # pin for transistor control
+TransistorPin = 21    # pin for transistor control
 TempGreen = 20         # pin for green temp LED
 TempRed = 16           # pin for red temp LED
 WGreen = 13
@@ -13,10 +13,10 @@ WYellow = 26
 GPIO.cleanup() #Clean up pinouts
 
 GPIO.setmode(GPIO.BCM) #set pinout hanling based on GPIO NR
-GPIO.setup([TransistortPin, TempGreen, TempRed, WGreen, WRed, WYellow], GPIO.OUT)
+GPIO.setup([TransistorPin, TempGreen, TempRed, WGreen, WRed, WYellow], GPIO.OUT)
 
 # Set pins to high(+3.3V)
-GPIO.output(TransistortPin, GPIO.HIGH)
+GPIO.output(TransistorPin, GPIO.HIGH)
 GPIO.output(TempRed, GPIO.HIGH)
 GPIO.output(TempGreen, GPIO.HIGH)
 GPIO.output(WGreen, GPIO.HIGH)
@@ -45,9 +45,9 @@ try:
 
         # Handle fan for HUM
         if th_json_data['humidity'] < 30:
-            GPIO.output(TransistortPin, GPIO.LOW)  # fan off
+            GPIO.output(TransistorPin, GPIO.LOW)  # fan off
         else:
-            GPIO.output(TransistortPin, GPIO.HIGH)  # fan on
+            GPIO.output(TransistorPin, GPIO.HIGH)  # fan on
 
         optimum = 1.3 * 1000
         max = optimum * 1.05
