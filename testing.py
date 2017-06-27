@@ -5,22 +5,6 @@ import requests
 import datetime
 import json
 
-channel = 18
-data = []
-j = 0
-
-GPIO.setmode(GPIO.BCM)
-
-time.sleep(1)
-
-GPIO.setup(channel, GPIO.OUT)
-
-GPIO.output(channel, GPIO.LOW)
-time.sleep(0.02)
-GPIO.output(channel, GPIO.HIGH)
-
-GPIO.setup(channel, GPIO.IN)
-
 tLock = threading.BoundedSemaphore(value=4)
 def timer(name, delay, repeat):
     print  "\r\nTimer: ", name, " Started"
@@ -35,7 +19,7 @@ def timer(name, delay, repeat):
     tLock.release()
     print "\r\nTimer: ", name, " Completed"
 
-def tempHum():
+def tempHum(channel, j, data):
 	while GPIO.input(channel) == GPIO.LOW:
 		continue
 
@@ -95,17 +79,29 @@ def tempHum():
 		print "temperature : ", temperature, ", humidity : " , humidity, " check : ", check, " tmp : ", tmp
 
 def Main():
+    channel = 18
+    data = []
+    j = 0
+
+    GPIO.setmode(GPIO.BCM)
+
+    time.sleep(1)
+
+    GPIO.setup(channel, GPIO.OUT)
+
+    GPIO.output(channel, GPIO.LOW)
+    time.sleep(0.02)
+    GPIO.output(channel, GPIO.HIGH)
+
+    GPIO.setup(channel, GPIO.IN)
+
     t1 = threading.Thread(target=timer, args=("Timer1", 2, 5))
-    t2 = threading.Thread(target=tempHum)
+    t2 = threading.Thread(target=tempHum, args=(channel, j, data))
     t3 = threading.Thread(target=timer, args=("Timer3", 4, 5))
-    t4 = threading.Thread(target=timer, args=("Timer4", 5, 5))
-    t5 = threading.Thread(target=timer, args=("Timer5", 0.1, 5))
 
     t1.start()
     t2.start()
     t3.start()
-    t4.start()
-    t5.start()
 
     print "\r\nMain Complete"
 
