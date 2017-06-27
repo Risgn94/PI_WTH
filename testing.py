@@ -98,7 +98,8 @@ def Main():
     t2 = threading.Thread(target=tempHum, args=(channel, j, data))
     t3 = threading.Thread(target=timer, args=("Timer3", 4, 5))
 
-    t1.start()
+    while True:
+        t1.start()
     t2.start()
     t3.start()
 
