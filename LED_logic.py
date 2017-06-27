@@ -10,8 +10,6 @@ WGreen = 13
 WRed = 19
 WYellow = 26
 
-GPIO.cleanup() #Clean up pinouts
-
 GPIO.setmode(GPIO.BCM) #set pinout hanling based on GPIO NR
 GPIO.setup([TransistorPin, TempGreen, TempRed, WGreen, WRed, WYellow], GPIO.OUT)
 

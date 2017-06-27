@@ -10,7 +10,6 @@ def tempHum():
 	channel = 18
 	data = []
 	j = 0
-	GPIO.cleanup()
 
 	GPIO.setmode(GPIO.BCM)
 
@@ -85,5 +84,9 @@ def tempHum():
 	GPIO.cleanup()
 
 while True:
-	tempHum()
-	time.sleep(3)
+	try:
+		tempHum()
+		time.sleep(3)
+	except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the flowing code will be  executed
+		print 'Closing...'
+		GPIO.cleanup()
