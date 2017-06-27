@@ -6,24 +6,22 @@ import requests
 import datetime
 import json
 
-
-channel = 18
-data = []
-j = 0
-
-GPIO.setmode(GPIO.BCM)
-
-time.sleep(1)
-
-GPIO.setup(channel, GPIO.OUT)
-
-GPIO.output(channel, GPIO.LOW)
-time.sleep(0.02)
-GPIO.output(channel, GPIO.HIGH)
-
-GPIO.setup(channel, GPIO.IN)
-
 def tempHum():
+	channel = 18
+	data = []
+	j = 0
+
+	GPIO.setmode(GPIO.BCM)
+
+	time.sleep(1)
+
+	GPIO.setup(channel, GPIO.OUT)
+
+	GPIO.output(channel, GPIO.LOW)
+	time.sleep(0.02)
+	GPIO.output(channel, GPIO.HIGH)
+
+	GPIO.setup(channel, GPIO.IN)
 	while GPIO.input(channel) == GPIO.LOW:
 		continue
 
@@ -46,7 +44,7 @@ def tempHum():
 			data.append(1)
 
 		j += 1
-
+#exit startBash
 	print "sensor is working."
 	#print data
 
