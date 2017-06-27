@@ -10,6 +10,7 @@ def tempHum():
 	channel = 18
 	data = []
 	j = 0
+	GPIO.cleanup()
 
 	GPIO.setmode(GPIO.BCM)
 
@@ -84,6 +85,5 @@ def tempHum():
 	GPIO.cleanup()
 
 while True:
-	GPIO.cleanup()
 	tempHum()
 	time.sleep(3)
