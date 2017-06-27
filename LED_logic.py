@@ -36,7 +36,7 @@ try:
         print "Server Responses:"
         print "Attribute      | Value"
         print "___________________________"
-        print "Distance:      |"+wString
+        print "Weight (kg):   |"+wString
         print "___________________________"
         print "Temperature:   |"+str(th_json_data['temperature'])
         print "Humidity:      |"+str(th_json_data['humidity'])
