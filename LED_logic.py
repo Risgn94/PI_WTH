@@ -58,8 +58,8 @@ try:
             GPIO.output(TransistorPin, GPIO.HIGH)  # fan on
 
         optimum = 1.3 * 1000
-        max = optimum * 1.05
-        min = optimum * 0.95
+        max = optimum * 1.08
+        min = optimum * 0.92
         currentMeasure = float(w_json_data['distance']) * 1000
 
         print currentMeasure
