@@ -32,8 +32,13 @@ try:
         w_json_data = json.loads(wResponse.text)
         th_json_data = json.loads(thResponse.text)
         #print json response
-        print "weight response: "+str(w_json_data)
-        print "temp / hum response: " + str(th_json_data)
+        print "READ:"
+        print "___________________________"
+        print "Distance: "+str(w_json_data['distance'])
+        print "Temperature: " + str(th_json_data['temperature'])
+        print "Humidity: " + str(th_json_data['humidity'])
+        print "___________________________"
+        print "\n"
 
         #Handle LEDS for temp
         if th_json_data['temperature'] > 22:
